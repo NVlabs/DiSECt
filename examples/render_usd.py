@@ -27,7 +27,7 @@ from cutting import load_settings, ConstantLinearVelocityMotion, CuttingSim
 # fmt: on
 
 settings = load_settings("examples/config/ansys_cylinder_jello.json")
-settings.sim_duration = 0.2
+settings.sim_duration = 2.2
 settings.sim_substeps = 100
 settings.sim_dt = 5e-5
 settings.initial_y = 0.08
