@@ -10,9 +10,9 @@ DiSECt is a simulator for the cutting of deformable materials. It uses the Finit
 
 * Python 3.6 or higher
 * PyTorch 1.4.0 or higher
-* Pixar USD lib (for visualization)
+* Pixar USD lib (optional, for advanced visualization)
 
-Pre-built USD Python libraries can be downloaded from https://developer.nvidia.com/usd, once they are downloaded you should follow the instructions to add them to your `PYTHONPATH` environment variable. Besides using the provided basic visualizer implemented using pyvista, DiSECt can generate USD files for rendering, e.g. in NVIDIA Omniverse™ or usdview.
+Pre-built USD Python libraries can be downloaded from https://developer.nvidia.com/usd, once they are downloaded you should follow the corresponding instructions to add them to your `PYTHONPATH` environment variable. Besides using the provided basic visualizer implemented using pyvista, DiSECt can generate USD files for rendering, e.g., in [NVIDIA Omniverse™](https://developer.nvidia.com/nvidia-omniverse-platform) or [usdview](https://graphics.pixar.com/usd/docs/USD-Toolset.html#USDToolset-usdview).
 
 ### Using the built-in backend
 
@@ -66,6 +66,10 @@ The following demos are provided and can be executed via `python examples/<examp
     DOI       = {10.15607/RSS.2021.XVII.067}
 }
 ```
+
+## Contributions
+
+We do not accept outside code contributions in the form of pull requests, but you are welcome to open issues which we may address in future updates to this work.
 
 ## License
 
