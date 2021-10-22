@@ -348,23 +348,23 @@ class Model:
         # derived state (output only)
         
         if (self.particle_count):
-            s.particle_f = torch.empty_like(self.particle_qd, requires_grad=True)
+            s.particle_f = torch.empty_like(self.particle_qd, requires_grad=False)
 
 
         if (self.link_count):
             
             # joints
-            s.joint_qdd = torch.zeros_like(self.joint_qd, requires_grad=True)
-            s.joint_tau = torch.zeros_like(self.joint_qd, requires_grad=True)
-            s.joint_S_s = torch.empty((self.joint_dof_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=True)            
+            s.joint_qdd = torch.zeros_like(self.joint_qd, requires_grad=False)
+            s.joint_tau = torch.zeros_like(self.joint_qd, requires_grad=False)
+            s.joint_S_s = torch.empty((self.joint_dof_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)            
 
             # derived rigid body data (maximal coordinates)
-            s.body_X_sc = torch.empty((self.link_count, 7), dtype=torch.float32, device=self.adapter, requires_grad=True)
-            s.body_X_sm = torch.empty((self.link_count, 7), dtype=torch.float32, device=self.adapter, requires_grad=True)
-            s.body_I_s = torch.empty((self.link_count, 6, 6), dtype=torch.float32, device=self.adapter, requires_grad=True)
-            s.body_v_s = torch.empty((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=True)
-            s.body_a_s = torch.empty((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=True)
-            s.body_f_s = torch.zeros((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=True)
+            s.body_X_sc = torch.empty((self.link_count, 7), dtype=torch.float32, device=self.adapter, requires_grad=False)
+            s.body_X_sm = torch.empty((self.link_count, 7), dtype=torch.float32, device=self.adapter, requires_grad=False)
+            s.body_I_s = torch.empty((self.link_count, 6, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
+            s.body_v_s = torch.empty((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
+            s.body_a_s = torch.empty((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
+            s.body_f_s = torch.zeros((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
             #s.body_ft_s = torch.zeros((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
             #s.body_f_ext_s = torch.zeros((self.link_count, 6), dtype=torch.float32, device=self.adapter, requires_grad=False)
 
