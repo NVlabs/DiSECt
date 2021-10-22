@@ -22,3 +22,4 @@ PyQt5==5.15.4
 tensorboardX==2.4
 urdfpy==0.0.22
 git+https://github.com/patrick-kidger/torchcubicspline.git@master#egg=torchcubicspline
+ninja==1.10.2.2
