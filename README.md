@@ -1,6 +1,6 @@
 # DiSECt: Differentiable Simulator for Robotic Cutting
 
-## [**Website**](https://diff-cutting-sim.github.io) | [**Paper**](https://arxiv.org/abs/2105.12244) | [**Dataset**](https://drive.google.com/file/d/1wucF6uyerdcrRPxZ88hfWOLv3pfCisNu/view?usp=sharing) | [**Video**](https://youtu.be/bN4yqHhfAfQ) | [**Blog post**](https://developer.nvidia.com/blog/nvidia-research-disect-a-differentiable-simulation-engine-for-autonomous-robotic-cutting/)
+## [**Website**](https://diff-cutting-sim.github.io) | [**Paper**](https://arxiv.org/abs/2105.12244) | [**Dataset**](https://drive.google.com/file/d/1AOeibooq2bVaUFqEfphJEbXaEHolaSBu/view?usp=sharing) | [**Video**](https://youtu.be/bN4yqHhfAfQ) | [**Blog post**](https://developer.nvidia.com/blog/nvidia-research-disect-a-differentiable-simulation-engine-for-autonomous-robotic-cutting/)
 
 ![Potato slicing](./docs/potato_slicing.gif)
 
