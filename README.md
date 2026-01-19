@@ -1,6 +1,6 @@
 # DiSECt: Differentiable Simulator for Robotic Cutting
 
-## [**Website**](https://diff-cutting-sim.github.io) | [**Paper**](https://arxiv.org/abs/2105.12244) | [**Dataset**](https://drive.google.com/file/d/1AOeibooq2bVaUFqEfphJEbXaEHolaSBu/view?usp=sharing) | [**Video**](https://youtu.be/bN4yqHhfAfQ) | [**Blog post**](https://developer.nvidia.com/blog/nvidia-research-disect-a-differentiable-simulation-engine-for-autonomous-robotic-cutting/)
+## [**Website**](https://diff-cutting-sim.github.io) | [**Paper**](https://arxiv.org/abs/2105.12244) | [**Dataset**](./dataset) | [**Video**](https://youtu.be/bN4yqHhfAfQ) | [**Blog post**](https://developer.nvidia.com/blog/nvidia-research-disect-a-differentiable-simulation-engine-for-autonomous-robotic-cutting/)
 
 ![Potato slicing](./docs/potato_slicing.gif)
 
@@ -23,7 +23,7 @@ By default, the simulation back-end uses the built-in PyTorch cpp-extensions mec
 ## Installation
 
 ### Dataset
-To set up our [dataset](https://drive.google.com/file/d/1wucF6uyerdcrRPxZ88hfWOLv3pfCisNu/view?usp=sharing) of meshes, simulated knife forces and nodal motion fields we recorded in the ANSYS LS-DYNA simulator, download [this zip file (96 MB)](https://drive.google.com/file/d/1wucF6uyerdcrRPxZ88hfWOLv3pfCisNu/view?usp=sharing) and extract it in the project folder, such that the folder `dataset` is at the top level.
+The [dataset](./dataset) of meshes, simulated knife forces, and nodal motion fields recorded in the ANSYS LS-DYNA simulator is included in this repository under the top-level `dataset` folder.
 
 We provide a `README.md` file with more details on the contents of this dataset in the `dataset` folder. The dataset is released under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 
