@@ -28,5 +28,4 @@ meshing.obj
 events.out.tfevents.*
 *.usd
 log/
-dataset/
 *.zip
